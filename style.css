@@ -18,13 +18,16 @@ p {
 
 .button-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button {
   background-color: #44127c;
   border: 1px solid blueviolet;
   display: flex;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .button:hover {

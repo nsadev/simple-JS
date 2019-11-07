@@ -14,28 +14,13 @@
     <h2>Countdown</h2>
     <p style="font-size: 1.1em;" id="countdown"></p>
   </div>
+  <div>
+    <h2>Like it?</h2>
+    <p style="font-size: 0.9em;">(Click twice and see what happens!)</p>
+    <p><span style="font-size: 1.5em;" id="likey">👍</span></p><p style="font-size: 1.1em;" id="count">100</p>
+  </div>
   
-  <script>
-    let countDownDate = new Date("Sep 1, 2022 12:00:00").getTime();
-
-    let update = setInterval(function() {
-      let today = new Date().getTime();
-      let remaining = countDownDate - today;
-
-      let days = Math.floor(remaining / (1000*60*60*24));
-      let hours = Math.floor((remaining % (1000*60*60*24)) / (1000*60*60));
-      let min = Math.floor((remaining % (1000*60*60)) / (1000*60));
-      let sec = Math.floor((remaining % (1000*60)) / 1000);
-
-      document.getElementById("countdown").innerHTML = 
-        days + " days " + hours + "h " + min + "min " + sec + "s ";
-
-      if (remaining <= 0) {
-        clearInterval(update);
-        document.getElementById("countdown").innerHTML = "Countdown finished"
-      }
-
-    }, 1000);
-  </script>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
 </body>
 </html>
