@@ -5,22 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link type="text/css" rel="stylesheet" href="">
+  <link type="text/css" rel="stylesheet" href="style.css">
 
   <title>Small + Simple JS</title>
+
 </head>
+
 <body>
-  <div>
-    <h2>Countdown</h2>
-    <p style="font-size: 1.1em;" id="countdown"></p>
-  </div>
-  <div>
-    <h2>Like it?</h2>
-    <p style="font-size: 0.9em;">(Click twice and see what happens!)</p>
-    <p><span style="font-size: 1.5em;" id="likey">👍</span></p><p style="font-size: 1.1em;" id="count">100</p>
-  </div>
-  
+  <div class="wrapper">
+    <div class="col">
+      <h2>Countdown</h2>
+      <p id="countdown"></p>
+    </div>
+
+
+    <div class="col">
+      <h2>Like it?</h2>
+      <p class="like-info">(Click twice and see what happens!)</p>
+      <p><span id="likey">👍</span></p><p id="count">100</p>
+    </div>
+
+
+    <div class="col">
+      <h2>Accordion</h2>
+      <ul class="accordion">
+        <li class="accordion-item open">
+          <h3>First item</h3>
+          <p>
+            Lorem ipsum dolor sit amet, et qui atomorum perpetua reprehendunt, labores legendos repudiare ea his. At quas iuvaret ocurreret has, usu tota dictas cu, diam utamur moderatius mea in. Dictas adversarium sit an, est ocurreret assueverit an. Mel eu dolore persecuti contentiones. Quo et timeam officiis, nec oblique similique incorrupte te.
+          </p>
+        </li>
+        <li class="accordion-item">
+          <h3>Second item</h3>
+          <p>
+            Lorem ipsum dolor sit amet, et qui atomorum perpetua reprehendunt, labores legendos repudiare ea his. At quas iuvaret ocurreret has, usu tota dictas cu, diam utamur moderatius mea in. Dictas adversarium sit an, est ocurreret assueverit an. Mel eu dolore persecuti contentiones. Quo et timeam officiis, nec oblique similique incorrupte te.
+          </p>
+        </li>
+        <li class="accordion-item">
+          <h3>Third item</h3>
+          <p>
+            Lorem ipsum dolor sit amet, et qui atomorum perpetua reprehendunt, labores legendos repudiare ea his. At quas iuvaret ocurreret has, usu tota dictas cu, diam utamur moderatius mea in. Dictas adversarium sit an, est ocurreret assueverit an. Mel eu dolore persecuti contentiones. Quo et timeam officiis, nec oblique similique incorrupte te.
+          </p>
+        </li>
+        <li class="accordion-item">
+          <h3>Fourth item</h3>
+          <p>
+            Lorem ipsum dolor sit amet, et qui atomorum perpetua reprehendunt, labores legendos repudiare ea his. At quas iuvaret ocurreret has, usu tota dictas cu, diam utamur moderatius mea in. Dictas adversarium sit an, est ocurreret assueverit an. Mel eu dolore persecuti contentiones. Quo et timeam officiis, nec oblique similique incorrupte te.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>  
   <script src="script1.js"></script>
   <script src="script2.js"></script>
+  <script src="script3.js"></script>
 </body>
 </html>
