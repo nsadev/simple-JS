@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Sliders</title>
+</head>
+<body>
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    .slide {
+      background-color: darkcyan;
+      color: white;
+      height: 400px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 48px;
+      line-height: 400px;
+      text-align: center;
+    }
+
+    .slider {
+      display: none;
+    }
+
+    .swap {
+      -webkit-animation-name: ease-in-out;
+      -webkit-animation-duration: 0.8s;
+      animation-name: ease-in-out;
+      animation-duration: 0.8s;
+    }
+  </style>
+
+  <div class="container">
+    <div class="slide slider swap">
+      <h2>Auto</h2>
+    </div>
+    <div class="slide slider swap">
+      <h2>matic</h2>
+    </div>
+    <div class="slide slider swap">
+      <h2>play</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
