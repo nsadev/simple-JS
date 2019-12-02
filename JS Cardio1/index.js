@@ -135,6 +135,6 @@ function fizzBuzz() {}
 
 
 // Call Function
-const output = capitalizeLetters('i love java');
+const output = capitalizeLetters('i love javascript');
 
 console.log(output);
